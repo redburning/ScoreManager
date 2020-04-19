@@ -43,7 +43,7 @@ public class UserEntity extends BaseEntity {
 	/**
 	 * 真实姓名
 	 */
-	@Column(nullable = false, length = 20)
+	@Column(length = 20)
 	private String realName;
 	
 	/**

@@ -24,22 +24,24 @@
 	<section class="login-form-wrap">
 		<h1>学生成绩管理系统</h1>
 		<div class="login-form">
-			<div class="close"></div>
 			<div class="head-info">
 				<label class="lbl-1"> </label>
 				<label class="lbl-2"> </label>
 				<label class="lbl-3"> </label>
 			</div>
-			<div class="clear"></div>
 			<div class="avtar">
 				<img src="image/login/avtar.png" />
 			</div>
 			<form action="loginController.do?doLogin" method="post" check="loginController.do?doCheck">
-				<input type="text" id="username" name="username" placeholder="用户名">
-				<input type="password" id="password" name="password" placeholder="密码">
-				<input type="text" id="captcha" name="captcha" placeholder="验证码">
 				<div>
-			    	<img style="float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="captchaCode">
+					<input type="text" id="username" name="username" placeholder="用户名">
+				</div>
+				<div>
+					<input type="password" id="password" name="password" placeholder="密码">
+				</div>
+				<div>
+					<input type="text" id="captcha" name="captcha" placeholder="验证码">
+					<img style="float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="captchaCode">
 		        </div>
 		        <br/>
 		        <div id="errormsg" style="color: red"></div>  		
